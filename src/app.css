@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1530px;
+  
+  --font-sans: 'Jost', sans-serif;
+
+
+  --shadow-3xl: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+@layer base {
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    scrollbar-color: #545454 #262626;
+  }
+  body {
+    @apply bg-neutral-900 text-[#D4D4D4];
+    @apply sm:pb-12;
+  }
+
+  b {
+    @apply text-white
+  }
+
+  .text-accent {
+    @apply text-emerald-500;
+  }
+
+  .text-accent-opaque {
+    @apply text-[#03BA7C]/80;
+  }
+
+  .mono {
+    @apply font-mono text-[85%] leading-[100%];
+  }
+}
+
+.link {
+  @apply text-emerald-500 underline decoration-emerald-500/50 decoration-[1.5px] underline-offset-2;
+  @apply transition-all hover:brightness-125;
+}
+
+.link-hidden {
+  @apply decoration-emerald-500/50 decoration-[1.5px] underline-offset-2 hover:underline text-white;
+  @apply transition-all hover:brightness-125;
+}
+
+::selection {
+  @apply bg-neutral-600;
+}
+
+h1 {
+  @apply my-2 text-3xl font-bold text-white;
+}
+
+h2 {
+  @apply my-1 text-2xl font-semibold text-white;
+}
+
+.dark-accent {
+  @apply border-[#27272A];
+}
+
+:root {
+  
+  
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.layout-md {
+  @apply mx-auto max-w-(--breakpoint-md) px-4 md:px-2;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
