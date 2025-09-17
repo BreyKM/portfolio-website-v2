@@ -18,14 +18,14 @@
     },
     {
       name: "pokePlex",
-      href: "https://github.com/BreyKM/pokePlex",
+      href: "https://breykm.github.io/pokePlex/",
       desc: "pokemon card showcase using pokeAPI",
       tool_icons: [
         "uil:react",
         "devicon-plain:javascript",
         "simple-icons:redux",
       ],
-      github: true,
+      github: false,
     },
     {
       name: "ships-co_data_analysis",
@@ -47,21 +47,22 @@
   <div class="space-y-12 text-xl">
     <div class="space-y-6 border-b pb-4 border-neutral-700">
       <p>
-        I'm currently pursing a <b>B.S. in Computer Science</b> at the <a class="link" href="https://www.liberty.edu/"> University of Houston-Downtown</a>,
-        but I think of myself as a builder first. I love the process of taking
-        an idea and turning it into clean, working software that people can
-        actually use. For me, good code isn't just about being efficient; it has
-        to create an experience that feels right.
+        I'm currently pursing a <b>B.S. in Computer Science</b> at the
+        <a class="link" href="https://www.uhd.edu/" target="_blank">
+          University of Houston-Downtown</a
+        >, but I think of myself as a builder first. I love the process of
+        taking an idea and turning it into clean, working software that people
+        can actually use. For me, good code isn't just about being efficient; it
+        has to create an experience that feels right.
       </p>
       <p>
         My coursework gave me a great foundation in algorithms and data
         structures, but I learned the most by just doing. I’ve gotten
-        comfortable with C++, Python, and JavaScript. I’m always tinkering on a personal
-        project, as it's the best way for me to try out new technologies and
-        really understand them. I'm excited to bring that hands-on approach to a
-        team and help solve some interesting problems.
+        comfortable with C++, Python, and JavaScript. I’m always tinkering on a
+        personal project, as it's the best way for me to try out new
+        technologies and really understand them. I'm excited to bring that
+        hands-on approach to a team and help solve some interesting problems.
       </p>
-      
     </div>
   </div>
   <div class="pt-4">
